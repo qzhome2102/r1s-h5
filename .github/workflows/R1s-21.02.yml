@@ -8,7 +8,7 @@
 # Description: Build ImmortalWrt for R1S-H5 using GitHub Actions
 #
 
-name: Build OpenWrt R1S-H5
+name: Build OpenWrt R1S-H5-21.02
 
 on:
   repository_dispatch:
@@ -21,7 +21,7 @@ on:
 
 env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt
-  REPO_BRANCH: openwrt-18.06
+  REPO_BRANCH: openwrt-21.02
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: SEED/R1S-H5/seed.config
   DIY_P1_SH: SCRIPTS/R1S-H5/diy-part1.sh
