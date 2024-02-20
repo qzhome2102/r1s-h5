@@ -33,7 +33,8 @@ jobs:
         echo "commitHash=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
     - name: Compare Commit Hash
       id: cacheHash
-      uses: actions/cache@v2
+#      uses: actions/cache@v2
+      uses: actions/checkout@v3
       with:
         path: .commitHash
         key: HEAD-${{ steps.getHash.outputs.commitHash }}
